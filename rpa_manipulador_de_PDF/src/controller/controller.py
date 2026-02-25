@@ -8,12 +8,11 @@ import json
 @enviar_relatorio
 def run() -> dict:
     carregar_env()
-    n_pages = main_hub()
+    n_pages, option = main_hub()
     report_data = dict()
-    json_data = get_main_msg_json
 
     quantidade: int = n_pages
-    log: dict = json_data
+    log: dict = option
     report_data['quantidade'] = quantidade
     report_data['taxa_sucesso'] = 1
     report_data['log'] = json.dumps(log ,default=json_serializer)

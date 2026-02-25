@@ -21,10 +21,9 @@ def process_option(option: int) -> None:
         values = [[data, tipo, n_pags, exec_time]]  # Valores para serem salvos no relatório.
         return n_pags
 
-def main_hub():
+def main_hub() -> dict:
     option: int = -1
     
-    # Aguarda até que seja recebida uma opção válida.
     while option < 0 or option > N_FUNCTIONS:
         print('Digite uma opção de documento para separar.')
         print_main_msg()
@@ -33,8 +32,10 @@ def main_hub():
             limpa_terminal()
         except ValueError:
             pass
-    return process_option(option)
 
+    n_pages = process_option(option)
+
+    return n_pages, NAMES[option]
 
 def print_main_msg() -> None:
     for key in NAMES.keys():
