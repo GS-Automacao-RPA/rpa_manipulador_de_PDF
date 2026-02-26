@@ -27,11 +27,12 @@ from .f26 import f26
 from .f27 import f27
 from .f28 import f28
 from .f29 import f29
+from .f30 import f30
 
 __all__ = [
     'f01','f02','f03','f04','f05','f06','f07','f08','f09','f10',
     'f11','f12','f13','f14','f15','f16','f17','f18','f19','f20',
-    'f21','f22','f23','f24','f25','f26','f27','f28', 'f29'
+    'f21','f22','f23','f24','f25','f26','f27','f28','f29','f30'
 ]
 
 N_FUNCTIONS = len(__all__)
@@ -65,5 +66,6 @@ NAMES = {
     26: 'Boletos Santander',
     27: 'NFs Curitiba',
     28: 'NFs Sao Paulo',
-    29: 'Boletos Vitoria'
+    29: 'Boletos Vitoria',
+    30: 'Informes de Rendimentos'
 }
