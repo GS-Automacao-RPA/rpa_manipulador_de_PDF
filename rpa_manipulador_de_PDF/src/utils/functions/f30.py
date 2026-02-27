@@ -2,6 +2,7 @@ from pypdf import PdfReader, PdfWriter
 import os
 import re
 from pathlib import Path
+from tqdm import tqdm
 
 
 def f30() -> int:
@@ -30,10 +31,7 @@ def extrair_informacao(texto: str):
         return None
 
 
-import os
-from pathlib import Path
-from PyPDF2 import PdfReader, PdfWriter
-from tqdm import tqdm
+
 
 
 def processar_pdf():

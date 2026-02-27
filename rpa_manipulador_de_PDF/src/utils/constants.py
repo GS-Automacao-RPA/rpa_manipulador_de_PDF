@@ -2,7 +2,7 @@ from src.utils.get_project_root import get_project_root
 from pathlib import Path
 
 
-VERSION: str = 'V2.2.0'
+VERSION: str = 'V2.3.1'
 NOME = 'Manipulador de PDF'
 PROJECT_ROOT: Path = get_project_root()  # Pasta raiz do projeto.
 DOTENV_PATH: Path = PROJECT_ROOT / 'resources' / '.env'  # Caminho do .env. 
