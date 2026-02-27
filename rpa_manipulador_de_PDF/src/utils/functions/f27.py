@@ -39,9 +39,10 @@ def f27() -> int:
 
             for row in text:
                 if row.startswith('DANFSe v1.0'):
-                    cliente = text[30]
-                    n_nota = pegar_numeros(text[7])
-                    cnpj = pegar_numeros(text[27])
+                    cliente = text[38]
+                    cliente = cliente.replace('E-mail', '')
+                    n_nota = pegar_numeros(text[11])
+                    cnpj = pegar_numeros(text[34])
                     nome_base = f'NF - {n_nota} - {cliente} - {cnpj}.pdf'
                     novo_nome = gerar_nome_unico(nome_base)
                     break

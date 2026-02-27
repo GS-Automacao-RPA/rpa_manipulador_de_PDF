@@ -14,7 +14,7 @@ def pegar_texto(texto: str):
     return ''.join(re.findall(r'[A-Za-zÀ-ÖØ-öø-ÿ ]+', str(texto)))
 
 def f27() -> int:
-    file = 'src/bolbnb_20260227_08-56-50.pdf'
+    file = 'src/NF - 41069022248405966000135000000000014326020084990796 - Simples Nacional naData deCompetência - 412.pdf'
 
     
     with open(file, 'rb') as file_bin:
@@ -23,11 +23,7 @@ def f27() -> int:
         text = page.extract_text().split('\n')
         for i in enumerate(text):
             print(i)
-        # codigo = pegar_numeros(text[16])
-        # data_venc = pegar_numeros(text[30])
-        # nome_emp = pegar_maiusculas(text[2])
-        # nome_cli = pegar_maiusculas(text[18])
-        # print(f"{data_venc}-{nome_emp}-{nome_cli}-{codigo}")
+      
         
       
 
